@@ -21,22 +21,4 @@
         <version>${cloud-sample.version}</version>
     </parent>
 
-    <dependencyManagement>
-        <dependencies>
-            <!--配置中心服务-->
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-config-server</artifactId>
-                <version>${spring-cloud.version}</version>
-            </dependency>
-
-            <!--消息总线-->
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-bus-amqp</artifactId>
-                <version>${spring-cloud.version}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
 </project>
