@@ -1,0 +1,24 @@
+server:
+  port: 4001
+
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: dev
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/hsLeng/pig-config.git
+          default-label: ${spring.profiles.active}
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1025/eureka
+
+
