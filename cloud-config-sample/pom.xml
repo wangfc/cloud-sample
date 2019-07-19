@@ -8,6 +8,7 @@
     <version>${cloud-sample.version}</version>
     <modules>
         <module>config-server-sample</module>
+        <module>config-client-sample</module>
     </modules>
     <packaging>pom</packaging>
 

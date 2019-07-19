@@ -1,0 +1,29 @@
+server:
+  port: 3001
+  servlet:
+    path: /
+    context-path: /config-client
+
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      discovery:
+        service-id: config-server
+        enabled: true
+      profile: ${spring.profiles.active}
+      label: master
+  profiles:
+    active: dev
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:1111@localhost:1001/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
