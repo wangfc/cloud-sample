@@ -4,14 +4,12 @@ server:
 spring:
   application:
     name: config-server
-  profiles:
-    active: dev
   cloud:
     config:
       server:
         git:
           uri: https://github.com/wangfc/cloud-sample-config.git
-          default-label: ${spring.profiles.active}
+          default-label: master
 
 
 eureka:
@@ -24,8 +22,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://admin:1111@localhost:1001/eureka
-
-#management:
-#  server:
-#    servlet:
-#      context-path: /admin
