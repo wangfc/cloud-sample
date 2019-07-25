@@ -14,6 +14,7 @@
   <modules>
     <module>cloud-discovery-sample</module>
     <module>cloud-config-sample</module>
+    <module>cloud-gateway-sample</module>
   </modules>
 
   <properties>

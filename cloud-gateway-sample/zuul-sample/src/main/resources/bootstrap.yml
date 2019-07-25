@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: zuul
+
+server:
+  port: 9999
+  servlet:
+    path: /
+    context-path: /api
+zuul:
+  routes:
+    config-client:
+      path: /config-client/**
+      serviceId: config-client
+      stripPrefix: false
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:1111@localhost:1001/eureka
+
+logging:
+  level:
+    com.netflix: debug
