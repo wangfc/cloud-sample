@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: zipkin-server
+
+server:
+  port: 9998
+  servlet:
+    context-path: /
+    path: /
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:1111@localhost:1001/eureka
+
+
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false    #暂不清楚此配置作用，为默认值true时访问会失败
