@@ -35,7 +35,7 @@
     <commons-codec.version>1.9</commons-codec.version>
     <lombok.version>1.18.0</lombok.version>
     <guava.version>25.1-jre</guava.version>
-    <xstream.version>1.4.10</xstream.version>
+    <xstream.version>1.4.16</xstream.version>
     <io.springfox.version>2.8.0</io.springfox.version>
     <mysql-connector-java.version>5.1.47</mysql-connector-java.version>
     <oracle.version>11.2.0.3.0</oracle.version>
